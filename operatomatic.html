@@ -16,11 +16,48 @@
         let a = 10
         let b = 3
         document.writeln("Penjumlahan : " + (a + b) + "<br>");
-        document.writeln("Pengurangan : " + (a + b) + "<br>");
-        document.writeln("Perkalian : " + (a + b ) + "<br>");
+        document.writeln("Pengurangan : " + (a - b) + "<br>");
+        document.writeln("Perkalian : " + (a * b ) + "<br>");
         document.writeln("Pembagian : " + (a / b) + "<br>");
         document.writeln("Modulus (sisa bagi) : " + (a % b)  + "<br>");
         document.writeln("Pangkat : " + (a** b) + "<br>");
+
+        //Augmented Assigment Operator 
+        
+        document.writeln("<h1>Augmented Assignment Operator</h1>");
+        document.writeln("<br>");
+        document.writeln("<h1>Contoh :</h1>");
+        let result = 10;
+        document.writeln(result);
+        result = result +10;
+        document.writeln("<br>");
+        // result += 10;
+
+        // Unary Operation
+        document.writeln("<h1>Unary Operation</h1>");
+        document.writeln("<h2>Contoh :</h2>");
+        document.writeln("<br>");
+        let unari = -1;
+        unari --;
+        document.writeln(unari);
+
+        // Comparasion Operation
+        document.writeln("<h1>Operator Perbandingan</h1>");
+        document.writeln("<h2>Contoh :</h2>");
+        let perbandingan = 5 !=3;
+        document.writeln(perbandingan);
+
+        // Logic Operation
+        document.writeln("<h1>Logic Operation</h1>");
+        document.writeln("<h2>Contoh :</h2>");
+        const nilaiUjian = 70;
+        const niliaAbsensi = 70;
+
+        const lulusujian = nilaiUjian > 75;
+        const lulusAbsensi = milaiAbsensi > 75;
+
+        const lulus = lulusUjian || lulusAbsensi;
+        document.writeln(lulus);
     </script>
 </body>
 </html>
