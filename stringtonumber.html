@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.writeln("<h1>String To Number</h1><br>");
+        const value1 = "1";
+        const value2 = 1
+
+        const sum = value1 + value2;
+        document.writeln(sum);
+        document.writeln("<br>");
+
+        document.writeln("<h1>parseFloat()</h1><br>");
+        const berat = "55.5kg";
+        document.writeln(berat + 2.3);
+        document.writeln("<br>");
+        document.writeln(parseFloat(berat)+2.3);
+
+        document.writeln("<h1>toString</h1><br>");
+        const angka = 123;
+        const text = angka.toString();
+        document.writeln("<br>");
+        document.writeln(text);
+
+        document.writeln("<h1>NaN (Not a Number)</h1><br>");
+        document.writeln(`<p> ${parseInt(selesai)}</p>`);
+        document.writeln(`<p> ${parseFloat("1.1text")}</p>`);
+
+        // Number tidak mentolerir kesalahan data
+        document.writeln(`<p> ${Number("1.1ups")}</p>`);
+        document.writeln(`<p> ${Number("1x")}</p>`);
+        document.writeln(`<p> ${Number("Bukan number")}</p>`);
+
+        document.writeln(IsNaN(10));
+        document.writeln("</br>");
+        document.writeln(IsNaN("selesai"));
+    </script>
+</body>
+</html>
