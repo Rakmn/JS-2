@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const lulus = 80    ;
+
+        if (lulus >= 80)
+        {document.writeln("<p>Lulus</p>");}
+        else
+        {document.writeln("<p>Tidak lulus</p>")}
+        
+        let nilai =99;
+        switch (true) {
+            case (nilai >= 95) :
+                document.writeln("<h1>A</h1>");break;
+            case (nilai >= 85) :
+                document.writeln("<h1>B+</h1>");break;
+            case (nilai >= 80) :
+                document.writeln("<h1>B</h1>");break;
+            case nilai >= 70 :
+                document.writeln("<h1>C</h1>");break;
+            case (nilai < 70) :
+                document.writeln("<h1>D</h1>");break;
+        }
+
+        const siswa = {
+            nama : "RAKMN",
+            kelas : "X.4",
+            jurusan : "AI Engineer"
+        }
+        const result = "nama" in siswa;
+        document.writeln(result);
+        document.writeln("</br>")
+
+        let murid = ["Arul", "Daffa", "Reynald", "Vito", "Bastian", "Salomo", "Brian", "Farhan"]
+        document.writeln(murid.length)
+        document.writeln("</br>")
+        document.writeln(murid[7])
+    </script>
+</body>
+</html>
