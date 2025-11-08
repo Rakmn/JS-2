@@ -41,6 +41,28 @@
         document.writeln(murid.length)
         document.writeln("</br>")
         document.writeln(murid[7])
+
+        // Ternary Operator
+        let value = 75
+        // if (value > 75){
+        //     console.log("Lanjut")
+        // } else {
+        //     console.log("Remedial")
+        // }
+
+        let hasil = value > 75 ? "Lanjut" : "Remedial";
+        console.log(hasil)
+
+        // Nullish Operator
+        let jumlah;
+        // let kualitas = jumlah;
+        // if (kualitas === jumlah || kualitas === null){
+        //     kualitas = "Kurang baik"
+        // }
+        // console.log(kualitas)
+
+        let kualitas = jumlah ?? "Kurang baik"
+        console.log(kualitas)
     </script>
 </body>
 </html>
