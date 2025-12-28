@@ -7,74 +7,158 @@
 </head>
 <body>
     <script>
-        const lulus = 80    ;
+        // const lulus = 80    ;
 
-        if (lulus >= 80)
-        {document.writeln("<p>Lulus</p>");}
-        else
-        {document.writeln("<p>Tidak lulus</p>")}
+        // if (lulus >= 80)
+        // {document.writeln("<p>Lulus</p>");}
+        // else
+        // {document.writeln("<p>Tidak lulus</p>")}
         
-        let nilai =99;
-        switch (true) {
-            case (nilai >= 95) :
-                document.writeln("<h1>A</h1>");break;
-            case (nilai >= 85) :
-                document.writeln("<h1>B+</h1>");break;
-            case (nilai >= 80) :
-                document.writeln("<h1>B</h1>");break;
-            case nilai >= 70 :
-                document.writeln("<h1>C</h1>");break;
-            case (nilai < 70) :
-                document.writeln("<h1>D</h1>");break;
-        }
-
-        const siswa = {
-            nama : "RAKMN",
-            kelas : "X.4",
-            jurusan : "AI Engineer"
-        }
-        const result = "nama" in siswa;
-        document.writeln(result);
-        document.writeln("</br>")
-
-        let murid = ["Arul", "Daffa", "Reynald", "Vito", "Bastian", "Salomo", "Brian", "Farhan"]
-        document.writeln(murid.length)
-        document.writeln("</br>")
-        document.writeln(murid[7])
-
-        // Ternary Operator
-        let value = 75
-        // if (value > 75){
-        //     console.log("Lanjut")
-        // } else {
-        //     console.log("Remedial")
+        // let nilai =99;
+        // switch (true) {
+        //     case (nilai >= 95) :
+        //         document.writeln("<h1>A</h1>");break;
+        //     case (nilai >= 85) :
+        //         document.writeln("<h1>B+</h1>");break;
+        //     case (nilai >= 80) :
+        //         document.writeln("<h1>B</h1>");break;
+        //     case nilai >= 70 :
+        //         document.writeln("<h1>C</h1>");break;
+        //     case (nilai < 70) :
+        //         document.writeln("<h1>D</h1>");break;
         // }
 
-        let hasil = value > 75 ? "Lanjut" : "Remedial";
-        console.log(hasil)
-
-        // Nullish Operator
-        let jumlah;
-        // let kualitas = jumlah;
-        // if (kualitas === jumlah || kualitas === null){
-        //     kualitas = "Kurang baik"
+        // const siswa = {
+        //     nama : "RAKMN",
+        //     kelas : "X.4",
+        //     jurusan : "AI Engineer"
         // }
+        // const result = "nama" in siswa;
+        // document.writeln(result);
+        // document.writeln("</br>")
+
+        // let murid = ["Arul", "Daffa", "Reynald", "Vito", "Bastian", "Salomo", "Brian", "Farhan"]
+        // document.writeln(murid.length)
+        // document.writeln("</br>")
+        // document.writeln(murid[7])
+
+        // // Ternary Operator
+        // let value = 75
+        // // if (value > 75){
+        // //     console.log("Lanjut")
+        // // } else {
+        // //     console.log("Remedial")
+        // // }
+
+        // let hasil = value > 75 ? "Lanjut" : "Remedial";
+        // console.log(hasil)
+
+        // // Nullish Operator
+        // let jumlah;
+        // // let kualitas = jumlah;
+        // // if (kualitas === jumlah || kualitas === null){
+        // //     kualitas = "Kurang baik"
+        // // }
+        // // console.log(kualitas)
+
+        // let kualitas = jumlah ?? "Kurang baik"
         // console.log(kualitas)
 
-        let kualitas = jumlah ?? "Kurang baik"
-        console.log(kualitas)
+        // // For loop
+        // let n;
+        // for(n = 0; n <= 10; n++){
+        //     console.log(n)
+        // }
 
-        // For loop
-        let n;
-        for(n = 0; n <= 10; n++){
-            console.log(n)
+        // // While loop
+        // let a = 1;
+        // while (a <= 10) {
+        //     console.log(a)
+        //     a++
+        // }
+
+        // let c = 1
+        // do {
+        //     console.log(`${c}`);
+        //     c++;
+        // }
+        // while (c <= 5)
+
+        // let d = 1;
+        // while (d <= 10) {
+        //     if (d % 2 === 1) {
+        //         console.log(d);
+        //     }
+        //     d++;
+        // }
+
+        // let e = 1;
+        // while (e <= 100) {
+        //     if (e % 2 === 0) {
+        //         console.log(e);
+        //     }
+        //     e++;
+        // }
+
+        // let f = 1
+        // while (f <= 100) {
+        //     console.log(f);
+
+        //     if (f % 2 === 0){
+        //         break;
+        //     }
+        //     f++
+        // }
+
+        // 29/11/2025
+        const merk = ["Lenovo", "Asus", "Acer"]
+        for (let index in merk){
+            document.writeln(`${index}<br>`)
         }
 
-        // While loop
-        let a = 1;
-        while (a <= 10) {
-            console.log(a)
-            a++
+        const seri = {
+            lenovo : "LOQ",
+            asus : "TUF",
+            acer : "Nitro"
+        }
+        for (let property in seri){
+            document.writeln(`${seri[property]} <br>`)
+        }
+        
+        const nums = {
+            mtk : 81,
+            ipa : 95,
+            ips : 70,
+            fisika : 80,
+            kimia : 79
+        }
+        let nilaimax = 0;
+        let mapel;
+        for (let property in nums){
+            if(
+                nums[property]>nilaimax
+            ){
+                mapel = property
+                nilaimax=nums[property]
+            }
+        }
+        document.writeln(`Nilai tertinggi ada pada mapel ${mapel} ${nilaimax} point`)
+        document.writeln('<br>')
+
+        const entry = ["Tecno", "Itel", "Infinix"]
+        for (let value of entry){
+            document.writeln(`${value} <br>`)
+        }
+
+        const games = {
+            Moba : "ML",
+            FPS : "Valo",
+            Advanture : "MC"
+        }
+        with (games){
+            document.writeln(Moba)
+            document.writeln(FPS)
+            document.writeln(Advanture)
         }
     </script>
 </body>
